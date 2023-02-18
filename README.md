@@ -41,7 +41,10 @@ $ npm start
 El servidor http se inicializa en el archivo  `index.ts` del directorio `api/`. Este es extendido por los módulos en el subdirectorio `modules`.
 
 ### Módulos
-Únicamente se cuenta con 2 modulos, *tasks* y *sessions*. los cuales están compuestos por tres archivo que se reparten las siguientes resposabilidades: manejo de rutas, lógica de negocio y almacenamiento; el archivo con terminación *.service.ts*, aparte de manejar la lógica de negocio se encarga de las validaciones de datos.
+Únicamente se cuenta con 2 modulos, *tasks* y *sessions*. los cuales están compuestos por tres archivo que se reparten las siguientes resposabilidades: 
+- **.routes:** manejo de rutas y validación.
+- **.service:** lógica de negocio.
+- **.storage:** almacenamiento.
 ```
 modules
 └── tasks
